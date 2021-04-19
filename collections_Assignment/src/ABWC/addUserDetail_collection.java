@@ -13,6 +13,7 @@ public class addUserDetail_collection {
 
      /*following method is used ask number of user to be stored*/
     public int numberOfUser() {
+        System.out.println("how many users u want to store");
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         return num;
@@ -65,20 +66,19 @@ public class addUserDetail_collection {
         List<List> det = new ArrayList<List>();
         int numberOfUser = numberOfUser();
         for(int i = 0;i<numberOfUser;i++) {
-
-        System.out.println("enter th detail of user:"+i);
-        setName();
-        List<String> take = new ArrayList<String>();
-        while(true) {
-           take.add(count,FirstName);
-           take.add(count++,LastName);
-           take.add(count++,Address);
-           take.add(count++,City);
-           take.add(count++,State);
-           take.add(count++,PhoneNumber);
-           take.add(count++,Zip);
-           count = 0;
-           break;
+            System.out.println("enter th detail of user:"+i);
+            setName();
+            List<String> take = new ArrayList<String>();
+            while(true) {
+                take.add(count,FirstName);
+                take.add(count++,LastName);
+                take.add(count++,Address);
+                take.add(count++,City);
+                take.add(count++,State);
+                take.add(count++,PhoneNumber);
+                take.add(count++,Zip);
+                count = 0;
+                break;
        }
        det.add(i,take);
     }
