@@ -1,4 +1,4 @@
-package ABWC;
+// package ABC;
 
 import java.util.*;
 
@@ -70,7 +70,7 @@ public class addUserDetail_collection {
             setName();
             List<String> take = new ArrayList<String>();
             while(true) {
-                take.add(count,FirstName);
+                take.add(count++,FirstName);
                 take.add(count++,LastName);
                 take.add(count++,Address);
                 take.add(count++,City);
