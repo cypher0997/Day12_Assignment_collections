@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 public class multipleAddressBook {
 
@@ -18,10 +19,15 @@ public class multipleAddressBook {
         }
     }
     public void display(){ 
+        System.out.println("enter the city u want to search for");
+        Scanner sc = new Scanner(System.in);
+        String val = sc.nextLine();
         for(int i = 0;i<MAB.size();i++) {
             for(int j = 0;j<MAB.get(i).size();j++) {
                 //here we use get(3) because the index of city is 3
-                if(((MAB.get(i)).get(j)).get(3).equals("jaipur")) {
+                if(((MAB.get(i)).get(j)).get(3).equals(val)) {
+                    System.out.println("u are in addressBook " + i);
+                    System.out.println("and in user:" + j); 
                     System.out.println((MAB.get(i)).get(j));
                 }
             }
