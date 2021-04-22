@@ -22,7 +22,7 @@ public class addUserDetail_collection {
    /*following method is used to take user details*/
    public String[] userInput() {   
     
-        String arr[] = new String[7];
+        String arr[] = new String[6];
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter FirstName  : ");
         String firstName = sc.nextLine();
@@ -33,18 +33,15 @@ public class addUserDetail_collection {
         System.out.print("Enter Address  : ");
         String address = sc.nextLine();
         arr[2] = address;
-        System.out.print("Enter City  : ");
-        String city = sc.nextLine();
-        arr[3] = city;
         System.out.print("Enter State : ");
         String state = sc.nextLine();
-        arr[4] = state;
+        arr[3] = state;
         System.out.print("Enter PhoneNUmber : ");
         String phoneNumber = sc.nextLine();
-        arr[5] = phoneNumber;
+        arr[4] = phoneNumber;
         System.out.print("Enter Zip : ");
         String zip = sc.nextLine();
-        arr[6] = zip;
+        arr[5] = zip;
         return arr;
     }   
 
@@ -54,10 +51,9 @@ public class addUserDetail_collection {
         this.FirstName = res[0];
         this.LastName = res[1];
         this.Address = res[2];
-        this.City = res[3];
-        this.State = res[4];
-        this.Zip = res[5];
-        this.PhoneNumber = res[6];
+        this.State = res[3];
+        this.Zip = res[4];
+        this.PhoneNumber = res[5];
    }
 
    /*this method is main execution sequence */
@@ -73,7 +69,6 @@ public class addUserDetail_collection {
                 take.add(count++,FirstName);
                 take.add(count++,LastName);
                 take.add(count++,Address);
-                take.add(count++,City);
                 take.add(count++,State);
                 take.add(count++,PhoneNumber);
                 take.add(count++,Zip);
